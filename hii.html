@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Icon Slideshow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .icon-container {
+            display: flex;
+            justify-content: space-between;
+            width: 400px; /* Adjust the width as needed */
+        }
+        
+        .icon {
+            width: 80px; /* Adjust the width as needed */
+            height: 80px; /* Adjust the height as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ddd;
+        }
+        
+        i {
+            color: #333;
+            font-size: 32px; /* Adjust the font size as needed */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="slide fade">
+            <i class="fas fa-heart"></i>
+        </div>
+        <div class="slide fade">
+            <i class="fas fa-smile"></i>
+        </div>
+        <div class="slide fade">
+            <i class="fas fa-thumbs-up"></i>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    const slides = document.querySelectorAll('.slide');
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = 'block';
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+    </script>
+</body>
+</html>

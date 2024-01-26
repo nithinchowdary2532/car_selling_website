@@ -1,0 +1,106 @@
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f8f8f8;
+}
+
+.heading {
+   background-color: #333;
+   color: white;
+   text-align: center;
+   padding: 20px;
+}
+
+.heading a {
+   color: #ff4b2b;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.heading a:hover {
+   text-decoration: underline;
+}
+
+.btn a {
+   text-decoration: none;
+   color: white;
+}
+
+.btn {
+   background-color: #ff4b2b;
+   color: white;
+   padding: 10px 20px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+.products {
+   padding: 20px;
+   text-align: center;
+}
+
+.title {
+   font-size: 36px;
+   color: #333;
+   margin-bottom: 30px;
+}
+
+.box-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.box {
+   background-color: white;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   margin: 20px;
+   padding: 20px;
+   max-width: 300px;
+   text-align: left;
+   transition: transform 0.2s;
+}
+
+.box img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 8px;
+}
+
+.flex-container {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10px;
+}
+
+.name,
+.category {
+   font-size: 16px;
+   font-weight: bold;
+}
+
+.price {
+   font-size: 18px;
+   font-weight: bold;
+   color: #ff4b2b;
+   text-align: left;
+}
+
+.box:hover {
+   transform: scale(1.05);
+}
+
+.empty {
+   font-size: 18px;
+   color: #333;
+}
+.box img {
+   width: 100%; /* Make images fill the container */
+   height: 200px; /* Set a fixed height */
+   object-fit: cover; /* Maintain aspect ratio */
+}

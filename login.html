@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <body>
+        <section>
+          <div class="form-box">
+            <div class="form-value">
+              <form>
+                <h2>Register </h2>
+                <div class="inputbox">
+                    <input type="text" name="name" required placeholder="Enter your name" class="box user-box" maxlength="50">
+                </div>
+                <div class="inputbox">
+                    <input type="email" name="email" required placeholder="Enter your email" class="box user-box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
+                </div>
+                <div class="inputbox">
+                    <input type="number" name="number" required placeholder="Enter your number" class="box user-box" min="0" max="9999999999" maxlength="10">
+                </div>
+                <div class="inputbox">
+                    <input type="password" name="pass" required placeholder="Enter your password" class="box user-box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
+                </div>
+                <div class="inputbox">
+                    <input type="password" name="cpass" required placeholder="Confirm your password" class="box user-box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
+                  </div>
+                <div class="register">
+                    <input type="submit" value="Register Now" name="submit" class="btn">
+                </div>
+                <p class="have">already have an account? <a href="login.php">login now</a></p>
+              </form>
+            </div>
+          </div>
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      </body>
+</body>
+</html>
