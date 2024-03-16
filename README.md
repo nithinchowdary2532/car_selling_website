@@ -1,5 +1,5 @@
 ![frame_firefox_mac_dark (1)](https://github.com/nithinchowdary2532/car_selling_website/assets/97021251/c3f3a01e-1a92-497e-b2a5-9f067d918816)
-)
+
 
 <h1 align="center">Car Rental Website Project</h1>  
 
